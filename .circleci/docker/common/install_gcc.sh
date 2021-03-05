@@ -4,6 +4,7 @@ set -ex
 
 if [ -n "$GCC_VERSION" ]; then
 
+  echo "*************************** installing gcc $GCC_VERSION ***************"
   # Need the official toolchain repo to get alternate packages
   add-apt-repository ppa:ubuntu-toolchain-r/test
   apt-get update
