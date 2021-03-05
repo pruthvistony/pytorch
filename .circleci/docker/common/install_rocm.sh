@@ -53,7 +53,7 @@ install_ubuntu() {
       DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated ${MIOPENKERNELS}
     fi
 
-#    install_magma
+    install_magma
 
     # Cleanup
     apt-get autoclean && apt-get clean
@@ -86,7 +86,7 @@ install_centos() {
                    rocprofiler-dev \
                    roctracer-dev
 
-#  install_magma
+  install_magma
 
   # Cleanup
   yum clean all
